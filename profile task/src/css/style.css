@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.prepearing {
+    width: 100%;
+    height: 100vh;
+    background-color: #343434;
+    padding-top: 40px;
+    padding-left: 30px;
+
+}
+
+.prepearing p {
+    font-size: 16px;
+    font-family: tahoma;
+    color: #6e6e6e;
+
+}
+
+@keyframes myAnim6 {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.prepearing a {
+    font-size: 70px;
+    font-family: tahoma;
+    color: #23D692;
+    animation: myAnim6 12s ease 0s 1 normal forwards;
+}
+
+/* Main Page */
+#body {
+    background: url(../image/cortina.jpg);
+}
+
+.container {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(3, 3, 3, 0.8353466386554622) 7%, rgba(255, 255, 255, 0) 100%);
+}
+
+.container .head {
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.container .head p {
+    font-size: 16px;
+    font-family: tahoma;
+    color: #23D692;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.container .head h1 {
+    font-size: 70px;
+    font-family: sans-serif;
+    color: aliceblue;
+    animation: myAnim1 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: aliceblue;
+    margin-top: 35px;
+    margin-left: 30px;
+    animation: myAnim2 8s ease 0s 1 normal forwards;
+}
+
+.container .menu .cart {
+    border-right: 1px solid #fff;
+    padding-right: 50px;
+}
+
+.container .menu .cart h4 {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container .menu .cart h4:hover {
+    color: #23D692;
+}
+
+.container .menu .cart p {
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.container .user {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 120px;
+}
+
+@keyframes myAnim3 {
+    0% {
+        opacity: 0;
+        transform: rotateY(100deg);
+        transform-origin: left;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0);
+        transform-origin: left;
+    }
+}
+
+.container .user img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 70px;
+    border: 4px solid #4e4c4c;
+    animation: myAnim3 2s ease 0s 1 normal forwards;
+}
+
+.container .user .user-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 50%;
+}
+
+@keyframes myAnim4 {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.container .user .user-info h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    animation: myAnim4 2s ease 0s 1 normal forwards;
+}
+
+.container .user .user-info hr {
+    width: 30px;
+    background-color: #23D692;
+    height: 4px;
+    border: none;
+    animation: myAnim4 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim5 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container .user .user-info p {
+    color: #C9CBCD;
+    font-family: sans-serif;
+    font-weight: 100;
+    animation: myAnim5 8s ease 0s 1 normal forwards;
+}
+

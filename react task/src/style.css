@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    animation: roll 15s linear 0.5s infinite;
+}
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5ed3f3;
+}
+
+.ellipse{
+    position: absolute;
+    width: 4%;
+    height: 20%;
+    border-radius: 50%;
+    border: 6px solid #5ed3f3 ;
+ }
+ .first-part{
+    transform: rotate(30deg);
+}
+.second-part{
+    transform: rotate(-30deg);
+}
+.third-part{
+    transform: rotate(90deg);
+}
+
+@keyframes roll{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
